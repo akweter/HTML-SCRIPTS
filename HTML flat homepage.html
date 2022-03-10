@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" name="James Akweter" content="HTML, HTML CODES">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+	<title>HOMEPAGE </title>
+</head>
+
+<style>
+html{
+	background: linear-gradient(red, yellow, #85DAB6, rebeccapurple);
+	margin: 5% 10% 5% 10%;
+	font-weight: bolder;
+}
+
+body{
+	background: radial-gradient(brown, skyblue, pink, white);
+}
+	
+h3{
+  background: #76E7E8;
+  /*background-size: 150px;*/
+  height: 30px;
+  color: blue;
+  text-align: center;
+  margin-bottom: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+div{
+	border-color: solid black;
+	text-align: initial;
+	float: left;
+	table-layout: initial;
+}
+
+h5{
+  width: 380px;
+  height: 340px;
+  position: absolute;
+  animation: mymove 15s infinite;
+  overflow: scroll;
+}
+
+@keyframes mymove {
+  from {left: 10%;}
+  to {left: 63%;}
+}
+
+content{
+	float: right;
+	margin-top: 20px;
+}
+
+h1{
+	color: red;
+	font-size: 50px;
+	font-family: 'MedievalSharp', cursive;;
+	text-align: center;
+	background: radial-gradient(blue, #C5CD4A, #52DDA0, #6383D9);
+	overflow: hidden;
+}
+
+h1:hover{
+	color: brown;
+	background: #DADBE3;
+	letter-spacing: 10px;
+	position: relative;
+	}
+
+code{
+	color: #083DF1;
+	background: #D5722D;
+	letter-spacing: 10px;
+	position: relative;
+	}
+
+code:hover{
+	color: red;
+	background: yellowgreen;
+	letter-spacing: 20px;
+	position: relative;
+	}
+
+header{
+	float: right;
+	margin-top: 0px;
+}
+
+summary{
+	height: 40opx;
+	margin: 10px auto;
+	overflow: hidden;
+}
+
+
+p{
+	float: left;
+	padding: 20px;
+	/*position: absolute;*/
+	display: flex;
+	overflow: hidden;
+	color: red;
+}
+
+
+article{
+	float: left;
+	padding-right: 20px;
+	display:inherit;
+	border: 4px solid brown;
+}
+
+address{
+	position: 0;
+	float: center;
+	width: 700px;
+	padding-left: 20px;
+	position:0;
+	border: 4px solid green;
+	display:inherit;
+}
+
+aside{
+	float: center;
+	width: 0 ;
+	padding-left: 20px;
+	padding-right: 0;
+	position: 0;
+	overflow: 0;
+	border: 4px solid red;
+	display:inherit;
+}
+
+
+blockquote{
+	background: conic-gradient(rgb(57, 194, 212), rgb(112, 236, 118), rgb(231, 218, 29), rgb(241, 58, 180));
+	height: 200px;
+	text-align: center;
+	font-size: 47;
+	color: ghostwhite;
+	text-transform: uppercase;
+	text-decoration: overline;
+	text-decoration-style: dotted;
+	text-decoration-color: solid red;
+	text-shadow: 7px;
+}
+
+h6{
+	width: 10px;
+	shape-outside: polygon(5px, 4px, 6px, 4px);
+	height: 15px;
+	background: radial-gradient(red, green, blue, purple) ;
+	position: relative;
+	display: none;
+	animation: james 3s infinite;
+}
+
+@keyframes james{
+  from {down: 10%;}
+  to {top: 63%;}
+}
+
+
+
+down{  position:absolute;
+     font-size:2em;
+     text-transform:uppercase;
+     font-weight:100;
+     letter-spacing:5px;
+     color: brown;
+     width: 78.8%;
+     background-color: cyan;
+}
+
+
+down:after{
+     content:attr(data);
+     position:absolute;
+     top:0;
+     left:0;
+     color: yellow;
+     width:40%;
+     height:100%;
+     overflow:hidden;
+     border-right:4px solid #4CAF50;
+     opacity:1;
+     -webkit-animation:animation 2.5s ease-in-out infinite;
+     -webkit-animation-direction:alternate;
+transition:all 0.2s;
+}
+@-webkit-keyframes animation{
+0%{
+width:0;
+}
+100%{
+width:100%;
+}
+}
+
+	/* simple css word animation*/
+*{font-family:fantasy;}
+h4{  position:absolute;
+     font-size:2em;
+     text-transform:uppercase;
+     font-weight:100;
+     letter-spacing:5px;
+     color:ivory;
+     background: skyblue;
+}
+h4:after{
+     content:attr(data);
+     position:absolute;
+     top:0;
+     left:0;
+     color:gray;
+     width:0;
+     height:100%;
+     overflow:visible;
+     border-right:4px solid #4CAF50;
+     opacity:1;
+     -webkit-animation:animation 2.5s ease-in-out infinite;
+     -webkit-animation-direction:alternate;
+transition:all 0.2s;
+}
+@-webkit-keyframes animation{
+0%{
+width:0;
+}
+100%{
+width:100%;
+}
+}
+
+main{
+	margin-top: 100px;
+	margin-bottom: 400px;
+}
+
+</style>
+
+
+<body onmousemove="showing()" class="show">
+
+
+	<h3>EMERGING OF NEW KNOWLEDGES</h3>
+
+
+<div>
+	<table>
+		<td>
+			<button id="REALTIME" onclick="myFunction()">Get the real time</button>
+		</td>
+		<td>
+			<button>
+				<a href="https://scontent.facc6-1.fna.fbcdn.net/v/t1.6435-9/67726132_719044945207505_4224115166138073088_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeEhkdMsQT8AP8II8VWt5er2zaClEsVDUvjNoKUSxUNS-MhgiLq6R2ZwBlz1_qqARgKulwWe2hNdnhvfGsoIHfAG&_nc_ohc=lEDEKnjb-1wAX-FjtEu&tn=Gl1bn_HkX50wcXmu&_nc_ht=scontent.facc6-1.fna&oh=51d7fd7863eb8362444025fb6da2b3f9&oe=6154CA5F" target="_blank"> My Girlfriend</a>
+			</button>
+		</td>
+	 <td>
+	 	<button id="Full" onclick="myFulltime()">Full time</button>
+   </td>
+  </table>
+</div>
+
+<br>
+
+	 <content id="search_box_blog">
+    <form action="">
+      <input type="text" placeholder="Search.." name="search">
+      <button onclick="Searcher()" class="class_button_serch" type="submit">
+      </button>
+		  <button title="submit" >
+			<a href="#" target="_self">BLOG</a>
+		  </button>
+	  </form>	
+	 </content>
+
+ <br>
+	<h1>JAVASCRIPT <code>MORE</code> THAN THE OTHER ONES</h1>
+
+
+<header>
+ <button title="HOMEPAGE" id="HOMEPAGE">
+	<a href="#" target="_self">HOME</a>
+ </button>
+
+ <button title="CAREER" id="CAREER">
+	<a href="#" target="_self">CAREER</a>
+ </button>
+
+ <button title="ABOUT" id="ABOUT">
+	<a href="#" target="_self">ABOUT</a>
+ </button>
+
+ <button title="SERVICES" id="SERVICES">
+	<a href="#" target="_self">SERVICES</a>
+ </button>
+
+
+ <button title="PRODUCTS" id="PRODUCTS">
+	<a href="#" target="_self">PRODUCTS</a>
+ </button>
+
+ <button title="MEDIA" id="MEDIA">
+	<a href="#" target="_self">MEDIA</a>
+ </button>
+
+ <button title="OTHERS" id="OTHERS">
+	<a href="#" target="_self">OTHERS</a>
+ </button>
+</header>
+<br>
+<main></main>
+<br>
+<p class="clearfix"><bdo dir="rtl" onclick="Time_over()" id="demo"></bdo></p>
+
+<blockquote></blockquote>
+
+<h6></h6>
+
+<script>	
+prompt("Learn to type, type to learn");
+console.log("HELLO JAMES");
+alert("Learn to read, Read to learn")
+
+
+function game(my) {
+  document.getElementById("game").innerHTML;
+	console.log("My phone is " + my);
+}
+game('having a low battery');
+game('having a low memory');
+game('system is updating');
+game('upgrading system');
+game('replacing the sim card for system improvement');
+game('arranging data');
+
+/*var demo= document.getElementById("demo");
+*/
+function Time_over(){
+	var d = new Date();
+	var h=d.getHours();
+	var noon= 12;
+}
+document.getElementById("demo").innerHTML=h ;
+
+if (h>noon) {
+	console.log("It is afternoon time");
+} 
+else {(h<noon)
+	console.log("It is morning time");
+}
+
+function addZero(i) {
+  if (i < 10) {
+    i = "0" + i;
+  }
+  return i;
+}
+
+function myFunction() {
+  var d = new Date();
+  var x = document.getElementById("REALTIME");
+  var h = addZero(d.getHours());
+  var m = addZero(d.getMinutes());
+  var s = addZero(d.getSeconds());
+  x.innerHTML = h + ":" + m + ":" + s;
+}
+
+function myFulltime() {
+	var m = new Date();
+	var d = Alert(m.getHours());
+document.getElementById("Full").innerHTML = d;
+}
+
+function Searcher() {
+  
+}
+
+//TILLY SHOULD APPEAR ON THE SCREEN
+
+/*function showing(names) {
+ var time = prompt("He loves her");
+  document.getElementByClass("show").innerHTML = time;
+}
+
+
+names("James");
+names("Akweter");
+names("Atta");
+names("Kwasi");
+names("Narh");
+*/
+</script>
+
+</body>
+</html>

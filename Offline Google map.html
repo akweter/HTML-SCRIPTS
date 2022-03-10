@@ -1,0 +1,77 @@
+
+<!--Map by Akweter James-->
+<div id="map"></div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAhsJhH9bL5zUz1C_nDy3RFfEAZZd28x0&libraries=geometry&v=3.19"></script>
+
+<style type="text/css">
+	html, body, #map {
+  height: 100%;
+  margin: 0;
+}
+#map {
+  width: 100%;
+}
+</style>
+
+<script type="text/javascript">
+	var meetups = [
+    { latitude: 51.50, longitude: 0.12, url: "http://www.meetup.com/London-JavaScript-Community/events/223128196/", city: "London, UK" },
+    { latitude: 42.90, longitude: -78.84, url: "http://www.meetup.com/Buffalojs/events/223417122/", city: "Buffalo, New York" },
+    { latitude: 38.25, longitude: -85.76, url: "http://www.meetup.com/Louisville-Summer-of-NativeScript-Meetup/events/223449998/", city: "Louisville, Kentucky" },
+    { latitude: 30.25, longitude: -97.75, url: "http://www.meetup.com/hybridappdev/events/223404532/", city: "Austin, Texas" },
+    { latitude: 39.98, longitude: -83.98, url: "http://www.meetup.com/windowsdevug/", city: "Columbus, Ohio" },
+    { latitude: 42.36, longitude: -71.05, url: "http://www.meetup.com/mobiletea/", city: "Boston, Massachusetts" },
+    { latitude: 33.75, longitude: -84.39, url: "http://www.meetup.com/Atlanta-NativeScript-Developers/events/223451726/", city: "Atlanta, Georgia" },
+    { latitude: -20.30, longitude: 57.47, url: "http://www.meetup.com/MauritiusSoftwareCraftsmanshipCommunity/events/223550046/", city: "Vacoas-Phoenix, Mauritius" },
+    { latitude: -23.55, longitude: -46.33, url: "http://www.thedevelopersconference.com.br/tdc/2015/saopaulo/trilha-javascript", city: "São Paulo, Brazil" },
+    { latitude: 42.73, longitude: -84.54, url: "https://groups.google.com/forum/#!forum/greaterlansingjug", city: "Lansing, Michigan" },
+    { latitude: 42.70, longitude: 23.33, url: "https://www.facebook.com/events/750824311706515/", city: "Sofia, Bulgaria" },
+    { latitude: -33.86, longitude: 151.20, url: "http://www.meetup.com/sydney-mobile-app-devs/events/223510457/?action=detail&eventId=223510457", city: "Sydney, Australia" },
+    { latitude: 42.68, longitude: -83.23, url: "http://groupspaces.com/DetoritPluralsightStudyGroup/item/990804", city: "Auburn Hills, Michigan" },
+    { latitude: 36.6, longitude: -4.63, url: "http://groupspaces.com/nativescript/", city: "Málaga Mijas, Spain" },
+    { latitude: 4.59, longitude: -74.07, url: "http://www.meetup.com/BDotNet/events/223853837/", city: "Bogotá, Colombia" },
+    { latitude: 45.52, longitude: -122.68, url: "http://www.meetup.com/NativeScript-Introduction-Meetup/events/223921920/", city: "Portland, Oregon" },
+    { latitude: 53.46, longitude: -2.23, url: "http://attending.io/events/mobile-manchester-nativescript", city: "Manchester, UK" },
+    { latitude: 33.52, longitude: -86.81, url: "https://sites.google.com/site/bugdotnet/#upcoming", city: "Birmingham, Alabama" },
+    { latitude: 48.77, longitude: 11.43, url: "", city: "Bavaria, Germany" },
+    { latitude: 43.62, longitude: -89.77, url: "https://www.thatconference.com/sessions/session/9097", city: "Wisconsin Dells, WI" },
+    { latitude: 33.45, longitude: 76.24, url: "http://www.drupalkashmir.org/", city: "Jammu and Kashmir, India" },
+    { latitude: 45.42, longitude: -75.69, url: "http://www.meetup.com/Ottawa-JavaScript/events/218835554/", city: "Ottawa, Canada" },
+    { latitude: 47.49, longitude: 19.05, url: "", city: "Budapest, Hungary" },
+    { latitude: -6.17, longitude: 106.82, url: "http://www.meetup.com/jakartajs/", city: "Jakarta, Indonesia" },
+    { latitude: 37.42, longitude: -122.13, url: "http://www.meetup.com/Summer-of-NativeScript/events/224382964/?a=socialmedia", city: "Palo Alto, California" },
+    { latitude: 34.73, longitude: -92.33, url: "http://lrdnug.org/Intro-to-NativeScript/", city: "Little Rock, Arkansas" },
+    { latitude: -37.81, longitude: 144.96, url: "http://www.meetup.com/MelbourneMobile/events/216528802/", city: "Melbourne, Australia" },
+    { latitude: 12.96, longitude: 77.56, url: "http://www.meetup.com/blrdroid/events/224049491/", city: "Bangalore, India" },
+    { latitude: 18.97, longitude: 72.82, url: "https://mumbaitechiegroup.wordpress.com/2015/08/13/seminar-on-5th-sept-on-telerik-open-source-framework-nativescript/", city: "Mumbai, India" },
+    { latitude: 18.52, longitude: 73.85, url: "http://www.puneusergroup.org/events.aspx", city: "Pune, India" },
+    { latitude: 9.97, longitude: 76.28, url: "http://k-mug.org/content/UGMeet19092015.aspx", city: "Kochi, India" },
+    { latitude: 17.37, longitude: 78.48, city: "Hyderabad, India" },
+    { latitude: 28.61, longitude: 77.20, city: "Delhi, India" },
+    { latitude: 40.71, longitude: -74.00, url: "http://www.meetup.com/Summer-of-NativeScript-New-York-City/", city: "New York, New York" },
+    { latitude: 53.80, longitude: -2.60, url: "http://www.meetup.com/blrdroid/events/224049491/", city: "Lancashire, UK" },
+    { latitude: 59.85, longitude: 17.64, url: "http://www.meetup.com/Uppsalajs/events/224847482/", city: "Uppsala, Sweden" },
+    { latitude: 29.76, longitude: -95.36, url: "http://nhdnug.org/", city: "Houston, Texas" },
+    { latitude: -32.91, longitude: 151.75, url: "http://www.meetup.com/Newcastle-Coders-Group/events/224597014/", city: "Newcastle, Australia" },
+    { latitude: 48.56, longitude: -4.33, url: "http://finistjug.fr/", city: "Le Folgoet, France" }
+];
+var map = new google.maps.Map(document.getElementById("map"), {
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    disableDefaultUI: true,
+    zoomControl: true,
+    zoom: 2,
+    center: new google.maps.LatLng(0, 0)
+});
+meetups.forEach(function(meetup) {
+    var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(meetup.latitude, meetup.longitude)
+    });
+    marker.setMap(map);
+    google.maps.event.addListener(marker, "click", function() {
+        var content = "<h4>" + meetup.city +  "</h4>";
+        new google.maps.InfoWindow({
+            content: meetup.url ? ("<a target='_blank' href='" + meetup.url + "'>" + content + "</a>") : content
+        }).open(map, marker);
+    })
+});
+</script>

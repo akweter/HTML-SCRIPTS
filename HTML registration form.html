@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="forms&input.css">
+  <title>W3 School Forms & Inputs</title>
+</head>
+<body>
+
+  <style>
+    body{
+      background-color: lightgreen;
+    }
+  </style>
+
+  <h2>
+    <center>
+      <u>
+        FORMS & INPUT
+      </u>
+    </center> 
+  </h2>
+  <h4>Registration Form</h4>
+  <form action="">
+    First Name:
+    <input type="text" name="Surname" placeholder="Full Name">
+    <br>
+    Your Email:
+    <input type="text" name="Email" value="example@cob.com">
+  </form>
+  
+  <p></p>
+  <b>Checkbox</b>
+  <br>
+  Do you love reading
+  <form action="">
+    Yes<input type="checkbox" name="answer" value="okay">
+    No<input type="checkbox" name="answer" checked="checked" value="okay">    
+  </form>
+  
+  
+  <p>
+    <b>Button</b>
+    <form action="https://cobwebommunications.wordpress.com" enctype="plain/text" method="get">
+Recommendation
+      <br>
+      <input type="Button" value="Subscribe" name="recommendation" size="8">
+    </form>
+  </p>
+  
+  
+  <p>
+    <b>
+      Radio
+    </b>
+    <br>
+    What is your religion?
+    <form action="">
+      Christianity
+<input type="radio" name="Answer" checked="checked" value="religion">
+      Orther
+      <input type="radio" name="Answer" value="religion">
+    </form>
+  </p>
+  
+  <p>
+    <b>
+      Drop Down Selection
+    </b><br>
+Favourite book
+    <form action=""> 
+      <select name="book">
+        <option value="book" selected="selected">Books</option>
+        <option value="Robinson Crusoe">Robinson Crusoe</option>
+        <option value="Gullivers Escape">Gullivers Escape</option>
+          <option value="Treasure Island">Treasure Island</option>
+        <option value="King Solomon Mine">King Solomon Mine</option>
+        <option value="Dracula">Dracula</option>
+      </select>
+    </form>
+  </p>
+  
+       <label for="book">Favourite Book</label>
+  <br>
+  <select name="Book">
+          <option value="0" selected="disable">Books</option>
+          <option value="King">King Solomon Mines</option> 
+          <option value="Dracula">Dracula</option>   
+        <option value="TI">Treasure Island</option>   
+          <option value="Ambassador">The Ambassador</option>   
+          <option value="Nightmare">Nightmare</option>  
+          <option value="Mermaid">Mermaid Girl</option> 
+          <option value="Greatest">Greatest of Kahlil Gibran</option>
+          <option value="Saints">The Saints</option>  
+          <option value="Renaissance">Renaissance</option>  
+          <option value="Civilazation">Makers of Civilization</option>    
+          <option value="State">Meaning of Poverty</option>    
+          <option value="Odysses">Odysses</option>
+       </select>  
+  <br>
+<h4>
+Text-Area</h4>
+<textarea rows="7" cols="15">Write your suggestion here:</textarea>
+  
+  <p>
+    <b>
+      Fieldset
+    </b>
+    <fieldset>
+      <legend>
+        Personal Info:
+      </legend>
+      Height<input type="text" size="4">
+      Weight<input type="text" size="2">
+    </fieldset>
+  </p>
+  
+  <p>
+    <b>
+      Action Attribute
+    </b><br>
+    <form name="input" action="forms&input.asp" method="get">
+      Bank Details
+      <br>
+      Account Name
+      <input type="text" name="Account Name" placeholder="Surname     Middle     Last Name" size="23">
+      <br>
+      Account Num:
+      <input type="text" name="Acc#" placeholder="10 to 16 digits" size="15">
+      <br>
+      <input a href="#" type="submit" value="Confirm">
+    </form>
+  </p>
+  
+  <p>
+    <b>
+      Action Mailing Form
+    </b><br>
+    Send E-mail to James:
+    <form action="Mailto:jamesakweter@gmail.com" enctype="plain/text" method="post">
+      Your Name:
+      <input type="text" name="name" placeholder="Sender's Name">
+      <br>
+      Message<br>
+      <textarea rows="7" cols="25" placeholder="Write your meassage here"></textarea>
+      <br>
+      <input type="Submit" value="Okay">
+      <input type="Submit" value="Cancel">
+      <br>
+      <input type="Submit" value="Send">
+      <input type="Submit" value="Reset">
+    </form>
+  </p>
+  </body>
+</html>
